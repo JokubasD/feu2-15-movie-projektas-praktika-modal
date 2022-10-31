@@ -33,28 +33,37 @@
         </div>
       </form>
     </div>
-    <div class="modal" id="delete-modal">
-      <h2 class="modal__title">Are you sure?</h2>
-      <p class="modal__content">
-        Are you sure you want to delete this item? This action can't be made
-        undone!
-      </p>
-      <div class="modal__actions">
-        <button class="btn btn--passive">No (Cancel)</button>
-        <button class="btn btn--danger">Yes</button>
+    <form action="" id="delete-movie-form">
+      <div class="modal" id="delete-modal">
+        <h2 class="modal__title">Are you sure?</h2>
+        <p class="modal__content">
+          Are you sure you want to delete this item? This action can't be made
+          undone!
+        </p>
+        <div class="modal__actions">
+          <button type="button" class="btn btn--passive2">No (Cancel)</button>
+          <button type="button" class="btn btn--danger2">Yes</button>
+        </div>
       </div>
-    </div>
-
+    </form>
     <header>
       <h1>Favorite Movies</h1>
       <button id="add-movie-btn">ADD MOVIE</button>
     </header>
-
+    <div class="filter">
+      <fieldset class="filter-field">
+        <legend>Filter by name:</legend>
+        <input type="text" name="filter" id="filter-input" placeholder="enter movie title">
+      <button id="search-title-btn">Search</button>
+      </fieldset>
+    </div>
     <main>
       <section id="entry-text" class="card">
-        <p>Your personal movie database!</p>
+        <p>There are no movies to display!</p>
       </section>
-      <ul id="movie-list"></ul>
+      <ul id="movie-list">
+        
+      </ul>
     </main>
   </body>
 </html>
